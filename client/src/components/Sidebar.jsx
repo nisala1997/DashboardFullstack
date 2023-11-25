@@ -13,7 +13,10 @@ import {
   useTheme,
 } from "@mui/material";
 import {
-  SettingsOutlined,
+  PersonAddAlt,
+  Edit,
+  PersonRemove,
+  //SettingsOutlined,
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
@@ -57,6 +60,22 @@ const navItems = [
   {
     text: "Geography",
     icon: <PublicOutlined />,
+  },
+  {
+    text: "User",
+    icon: null,
+  },
+  {
+    text: "Add User",
+    icon: <PersonAddAlt />,
+  },
+  {
+    text: "Edit User",
+    icon: <Edit />,
+  },
+  {
+    text: "Delete User",
+    icon: <PersonRemove />,
   },
   {
     text: "Sales",
@@ -195,7 +214,7 @@ const Sidebar = ({
 
           <Box position="absolute" bottom="2rem">
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
+{/*             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
                 component="img"
                 alt="profile"
@@ -226,7 +245,7 @@ const Sidebar = ({
                   fontSize: "25px ",
                 }}
               />
-            </FlexBetween>
+            </FlexBetween> */}
           </Box>
         </Drawer>
       )}
